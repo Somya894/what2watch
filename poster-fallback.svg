@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 750" role="img">
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1b2034"/>
+      <stop offset="1" stop-color="#101321"/>
+    </linearGradient>
+  </defs>
+  <rect width="500" height="750" fill="url(#background)"/>
+  <circle cx="250" cy="300" r="104" fill="#ff3264" fill-opacity=".12"/>
+  <path d="M177 252h146v114H177zM177 252l24-42h146l-24 42m-122 0 24-42m26 42 24-42m26 42 24-42" fill="none" stroke="#ff6685" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
+  <path d="m226 280 67 29-67 29z" fill="#ff6685"/>
+  <text x="250" y="440" fill="#f5f5fa" font-family="Arial,sans-serif" font-size="24" font-weight="700" letter-spacing="4" text-anchor="middle">POSTER UNAVAILABLE</text>
+  <text x="250" y="690" fill="#a9afc2" font-family="Arial,sans-serif" font-size="24" font-weight="700" letter-spacing="3" text-anchor="middle">WHAT2WATCH</text>
+</svg>

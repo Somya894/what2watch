@@ -1,0 +1,122 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What2watch?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body><header class="navbar">
+    <h1 class="logo">WHAT<span class="logo-number">2</span>WATCH<span class="logo-question">?</span></h1>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#mood">By Mood</a>
+        <a href="#movies">Movies</a>
+        <a href="#series">Web Series</a>
+        
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <p class="tagline">YOUR NEXT FAVORITE IS HERE</p>
+
+<h1>
+    Discover Movies &amp; Web Series
+    That Match <span class="highlight">Your Mood</span>
+</h1>
+
+<p class="description">
+    From thrilling adventures to heartwarming stories —
+    find something perfect for every mood.
+</p>
+    
+
+    <div class="search-box">
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search movies or series..."
+        >
+        <button onclick="searchMovies()">Search</button>
+    </div>
+</section>
+<section class="content-section" id="mood">
+    <h2>✨ Let’s find something to watch</h2>
+    <p class="mood-description">
+        Tell us a little about what you’re looking for.
+    </p>
+    <div class="name-input-container">
+    <label class="prompt-label" for="userName">First, what’s your name?</label>
+    <input
+        type="text"
+        id="userName"
+        placeholder="Enter your name"
+        autocomplete="given-name"
+    >
+    <p id="nameError" hidden>Please enter your name first!</p>
+</div>
+
+<h3 class="prompt-label mood-prompt">What’s your mood?</h3>
+<div class="mood-buttons">
+    <button type="button" data-mood="happy" aria-pressed="false" onclick="selectMood('happy', this)">😊 Happy</button>
+    <button type="button" data-mood="romantic" aria-pressed="false" onclick="selectMood('romantic', this)">❤️ Romantic</button>
+    <button type="button" data-mood="sad" aria-pressed="false" onclick="selectMood('sad', this)">🥹 Sad</button>
+    <button type="button" data-mood="thriller" aria-pressed="false" onclick="selectMood('thriller', this)">🔥 Thriller</button>
+    <button type="button" data-mood="excited" aria-pressed="false" onclick="selectMood('excited', this)">🤩 Excited</button>
+    <button type="button" data-mood="relaxed" aria-pressed="false" onclick="selectMood('relaxed', this)">😌 Relaxed</button>
+    <button type="button" data-mood="adventurous" aria-pressed="false" onclick="selectMood('adventurous', this)">🧭 Adventurous</button>
+    <button type="button" data-mood="mystery" aria-pressed="false" onclick="selectMood('mystery', this)">🔍 Mystery</button>
+</div>
+<p id="moodError" hidden>Please choose your mood.</p>
+
+<div class="preference-container">
+    <label for="mediaPreference">Then, what would you like to watch?</label>
+    <select id="mediaPreference">
+        <option value="Movie">A movie</option>
+        <option value="Series">A series</option>
+    </select>
+</div>
+
+<button class="recommend-button" type="button" onclick="getRecommendations()">Find recommendations</button>
+
+<div id="welcomeMessage"></div>
+
+<div id="recommendationStatus" role="status" hidden></div>
+<div id="recommendationResults" class="movie-container" aria-live="polite"></div>
+
+</section>
+<section class="content-section" id="movies">
+    <h2>🎬 Popular Movies</h2>
+    <p id="catalogStatus" role="status" hidden></p>
+    <p id="searchStatus" role="status" hidden></p>
+    <div class="movie-container" id="movieContainer" aria-live="polite"></div>
+    <p id="noResults" hidden>No titles found. Try another search!</p>
+</section>
+
+<section class="content-section" id="series">
+    <h2>📺 Popular Web Series</h2>
+
+    <div class="movie-container" id="seriesContainer" aria-live="polite"></div>
+</section>
+
+<script src="script.js"></script>
+
+<footer class="site-footer">
+    <h2 class="footer-logo">WHAT<span>2</span>WATCH<span class="question">?</span></h2><p>Your next favourite starts here.</p>
+
+<div class="footer-links">
+    <a href="#home">Home</a>
+    <a href="#mood">By Mood</a>
+    <a href="#movies">Movies</a>
+    <a href="#series">Web Series</a>
+</div>
+
+<div class="footer-line"></div>
+
+<p class="copyright">
+    © 2026 WHAT2WATCH? | Made for movie lovers.
+</p>
+
+</footer>
+</body>
+</html>

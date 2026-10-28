@@ -1,0 +1,1015 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+background: #0b0b12;
+color: #ffffff;
+font-family: Arial, sans-serif;
+}
+
+.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 22px 7%;
+background: #11111b;
+border-bottom: 1px solid #292936;
+}
+
+.logo {
+font-size: 25px;
+letter-spacing: 1px;
+}
+
+.logo span {
+color: #ff4567;
+}
+
+nav {
+display: flex;
+gap: 25px;
+}
+
+nav a {
+color: #ddddE8;
+text-decoration: none;
+}
+
+nav a:hover {
+color: #ff4567;
+}
+
+.hero {
+text-align: center;
+padding: 85px 20px;
+background: linear-gradient(135deg, #191329, #10101a, #29121d);
+}
+
+.tagline {
+color: #ff6680;
+font-size: 12px;
+letter-spacing: 3px;
+margin-bottom: 20px;
+}
+
+.hero h2 {
+font-size: 42px;
+margin-bottom: 15px;
+}
+
+.description {
+color: #c0c0cc;
+margin-bottom: 30px;
+}
+
+.search-box {
+display: flex;
+justify-content: center;
+max-width: 550px;
+margin: auto;
+}
+
+.search-box input {
+flex: 1;
+min-width: 0;
+padding: 15px;
+border: none;
+outline: none;
+border-radius: 7px 0 0 7px;
+font-size: 15px;
+}
+
+button {
+cursor: pointer;
+border: none;
+background: #ff4567;
+color: white;
+padding: 12px 16px;
+border-radius: 5px;
+}
+
+.search-box button {
+border-radius: 0 7px 7px 0;
+}
+
+button:hover {
+background: #e52d50;
+}
+
+.content-section {
+padding: 45px 7%;
+}
+
+.content-section h2 {
+margin-bottom: 25px;
+}
+
+.movie-container {
+display: flex;
+flex-wrap: wrap;
+gap: 25px;
+}
+
+.movie-card {
+width: 200px;
+padding: 12px;
+background: #171722;
+border: 1px solid #292936;
+border-radius: 10px;
+transition: transform 0.2s;
+}
+
+.movie-card:hover {
+transform: translateY(-5px);
+}
+
+.poster {
+height: 220px;
+border-radius: 7px;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+padding: 10px;
+font-size: 20px;
+font-weight: bold;
+}
+
+.poster-one {
+background: linear-gradient(145deg, #274c77, #6096ba);
+}
+
+.poster-two {
+background: linear-gradient(145deg, #090909, #35405b);
+}
+
+.poster-three {
+background: linear-gradient(145deg, #6b172b, #17111e);
+}
+
+.poster-four {
+background: linear-gradient(145deg, #171717, #48344f);
+}
+
+.poster-five {
+background: linear-gradient(145deg, #701c27, #15284c);
+}
+
+.movie-card h3 {
+margin: 15px 0 8px;
+}
+
+.movie-card p {
+color: #b9b9c8;
+margin-bottom: 14px;
+font-size: 14px;
+}
+
+.movie-card button {
+width: 100%;
+font-size: 12px;
+}
+
+#watchlistItems li {
+margin: 12px 0;
+color: #ddddE8;
+}
+
+footer {
+text-align: center;
+padding: 25px;
+background: #11111b;
+color: #aaaaBB;
+margin-top: 30px;
+}
+
+@media (max-width: 700px) {
+.navbar {
+flex-direction: column;
+gap: 20px;
+}
+
+nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.hero h2 {
+    font-size: 30px;
+}
+
+.movie-container {
+    justify-content: center;
+}
+
+}
+.mood-description {
+color: #c0c0cc;
+margin: -12px 0 22px;
+}
+
+.mood-buttons {
+display: flex;
+flex-wrap: wrap;
+gap: 12px;
+margin-bottom: 25px;
+}
+
+.mood-buttons button {
+border: 1px solid #393044;
+border-radius: 22px;
+padding: 12px 20px;
+}
+
+#recommendationResults:empty {
+display: none;
+}
+
+#recommendationResults .movie-card {
+margin-bottom: 10px;
+}
+/* ===== WHAT 2 WATCH - DESIGN UPGRADE ===== */
+
+body {
+    background: #080b16;
+    color: #f5f5fa;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Navbar */
+nav, header {
+    background: #0a0d19;
+    border-bottom: 1px solid #252a3b;
+}
+
+/* Main headings */
+h1, h2, h3 {
+    color: #f8f8fc;
+}
+
+h1 {
+    font-size: clamp(32px, 4vw, 56px);
+    line-height: 1.2;
+}
+
+/* Pink highlight */
+.highlight, .pink {
+    color: #ff3264;
+}
+
+/* Search bar */
+input[type="text"],
+input[type="search"] {
+    background: #171c2d;
+    color: white;
+    border: 1px solid #424a62;
+    border-radius: 30px;
+    padding: 15px 20px;
+    outline: none;
+}
+
+input[type="text"]:focus,
+input[type="search"]:focus {
+    border-color: #ff3264;
+}
+
+/* Buttons */
+button {
+    background: #ff3264;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 22px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #e91e50;
+    transform: translateY(-2px);
+}
+
+/* Mood buttons */
+.mood-buttons button {
+    background: #101321;
+    border: 1px solid #ff3264;
+    margin: 6px;
+    padding: 14px 24px;
+}
+
+/* Movie cards */
+.movie-card {
+    background: #111625;
+    border: 1px solid #292f42;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.movie-card:hover {
+    transform: translateY(-5px);
+    border-color: #ff3264;
+}
+
+/* Movie posters */
+.movie-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Movie sections */
+.movies-container,
+.movie-container,
+#movie-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+/* Page spacing */
+section {
+    padding: 35px 4%;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    .movies-container,
+    .movie-container,
+    #movie-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .movie-card img {
+        height: 210px;
+    }
+}/* ===== WHAT 2 WATCH - DESIGN UPGRADE ===== */
+
+body {
+    background: #080b16;
+    color: #f5f5fa;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Navbar */
+nav, header {
+    background: #0a0d19;
+    border-bottom: 1px solid #252a3b;
+}
+
+/* Main headings */
+h1, h2, h3 {
+    color: #f8f8fc;
+}
+
+h1 {
+    font-size: clamp(32px, 4vw, 56px);
+    line-height: 1.2;
+}
+
+/* Pink highlight */
+.highlight, .pink {
+    color: #ff3264;
+}
+
+/* Search bar */
+input[type="text"],
+input[type="search"] {
+    background: #171c2d;
+    color: white;
+    border: 1px solid #424a62;
+    border-radius: 30px;
+    padding: 15px 20px;
+    outline: none;
+}
+
+input[type="text"]:focus,
+input[type="search"]:focus {
+    border-color: #ff3264;
+}
+
+/* Buttons */
+button {
+    background: #ff3264;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 22px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #e91e50;
+    transform: translateY(-2px);
+}
+
+/* Mood buttons */
+.mood-buttons button {
+    background: #101321;
+    border: 1px solid #ff3264;
+    margin: 6px;
+    padding: 14px 24px;
+}
+
+/* Movie cards */
+.movie-card {
+    background: #111625;
+    border: 1px solid #292f42;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.movie-card:hover {
+    transform: translateY(-5px);
+    border-color: #ff3264;
+}
+
+/* Movie posters */
+.movie-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Movie sections */
+.movies-container,
+.movie-container,
+#movie-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+/* Page spacing */
+section {
+    padding: 35px 4%;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    .movies-container,
+    .movie-container,
+    #movie-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .movie-card img {
+        height: 210px;
+    }
+}
+/* ===== HERO SECTION ===== */
+
+.hero {
+    text-align: center;
+    padding: 80px 20px 60px;
+    background: radial-gradient(
+        ellipse at top,
+        #20203b 0%,
+        #0b0d19 65%,
+        #080b16 100%
+    );
+}
+
+.hero .tagline {
+    color: #ff4775;
+    font-size: 13px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.hero h1 {
+    max-width: 850px;
+    margin: 20px auto;
+    font-size: clamp(36px, 5vw, 60px);
+    line-height: 1.2;
+}
+
+.hero .description {
+    color: #b8bbca;
+    max-width: 600px;
+    margin: 18px auto 30px;
+    line-height: 1.7;
+}
+
+.hero .highlight {
+    color: #ff3264;
+}
+
+/* SEARCH BAR */
+
+.hero input {
+    width: min(400px, 60%);
+    padding: 16px 20px;
+    border-radius: 30px;
+    background: #171a2a;
+    color: white;
+    border: 1px solid #363b52;
+    font-size: 15px;
+}
+
+.hero input:focus {
+    border-color: #ff3264;
+    outline: none;
+}
+
+.hero button {
+    padding: 16px 25px;
+    margin-left: 8px;
+    border-radius: 30px;
+    background: #ff3264;
+    color: white;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .hero {
+        padding: 55px 16px 40px;
+    }
+
+    .hero input {
+        width: 90%;
+        box-sizing: border-box;
+    }
+
+    .hero button {
+        margin: 12px 0 0;
+    }
+}
+.poster img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.logo {
+font-size: 28px;
+font-weight: bold;
+}
+
+.logo .logo-number {
+color: #ff3264;
+font-size: 42px;
+display: inline-block;
+}
+h1.logo .logo-number {
+color: #ff3264 !important;
+font-size: 46px !important;
+font-weight: 900 !important;
+display: inline-block !important;
+line-height: 1 !important;
+vertical-align: middle;
+}
+h1.logo .logo-number {
+color: #ff3264 !important;
+font-size: 46px !important;
+font-weight: 900 !important;
+display: inline-block;
+vertical-align: middle;
+}
+/* WHAT2WATCH - Premium Logo */
+
+.navbar .logo,
+.logo {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 27px;
+font-weight: 800;
+letter-spacing: -1.5px;
+color: #f5f5fa;
+white-space: nowrap;
+}
+
+.logo {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 27px;
+font-weight: 800;
+letter-spacing: -1.5px;
+color: #f5f5fa;
+white-space: nowrap;
+display: flex;
+align-items: center;
+}
+
+.logo .logo-number {
+color: #ff3264;
+font-size: 1.35em;
+font-weight: 900;
+display: inline-block;
+margin: 0 1px;
+text-shadow: 0 0 12px rgba(255, 50, 100, 0.3);
+transform: translateY(-5px);
+line-height: 1;
+}
+
+.logo .logo-question {
+color: #ff3264;
+}
+.logo {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 27px;
+font-weight: 800;
+letter-spacing: -1.5px;
+color: #f5f5fa;
+white-space: nowrap;
+display: flex;
+align-items: center;
+}
+
+.logo .logo-number {
+color: #ff3264;
+font-size: 1.35em;
+font-weight: 900;
+display: inline-block;
+margin: 0 1px;
+text-shadow: 0 0 12px rgba(255, 50, 100, 0.3);
+transform: translateY(-5px);
+line-height: 1;
+}
+
+.logo .logo-question {
+color: #ff3264;
+}
+/* ===== PREMIUM NAVBAR ===== */
+
+.navbar {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 16px 5%;
+background: #090c17;
+border-bottom: 1px solid rgba(255, 50, 100, 0.15);
+}
+
+.navbar nav {
+display: flex;
+align-items: center;
+gap: 30px;
+}
+
+.navbar nav a {
+color: #d6d8e2;
+text-decoration: none;
+font-size: 14px;
+font-weight: 600;
+transition: color 0.25s ease;
+}
+
+.navbar nav a:hover {
+color: #ff3264;
+}
+
+.navbar nav a::after {
+content: "";
+display: block;
+width: 0;
+height: 2px;
+background: #ff3264;
+margin-top: 5px;
+transition: width 0.25s ease;
+}
+
+.navbar nav a:hover::after {
+width: 100%;
+}
+
+@media (max-width: 600px) {
+.navbar {
+flex-wrap: wrap;
+gap: 15px;
+}
+
+.navbar nav {
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+}
+/* ===== PREMIUM SEARCH BAR ===== */
+
+.hero input[type="text"],
+.hero input[type="search"] {
+width: 420px;
+max-width: 65%;
+padding: 16px 22px;
+background: rgba(17, 22, 39, 0.9);
+color: #ffffff;
+border: 1px solid #343b52;
+border-radius: 30px;
+font-size: 14px;
+transition: all 0.3s ease;
+box-sizing: border-box;
+}
+
+.hero input::placeholder {
+color: #9299ad;
+}
+
+.hero input:focus {
+outline: none;
+border-color: #ff3264;
+box-shadow: 0 0 15px rgba(255, 50, 100, 0.18);
+}
+
+.hero button {
+padding: 16px 28px;
+background: #ff3264;
+color: white;
+border: none;
+border-radius: 30px;
+font-size: 14px;
+font-weight: 700;
+cursor: pointer;
+transition: all 0.3s ease;
+}
+
+.hero button:hover {
+background: #ff527c;
+box-shadow: 0 0 18px rgba(255, 50, 100, 0.3);
+transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+.hero input[type="text"],
+.hero input[type="search"] {
+width: 100%;
+max-width: 100%;
+}
+
+.hero button {
+    margin-top: 12px;
+}
+
+}
+/* ===== CINEMATIC MOVIE CARDS ===== */
+
+.movie-card {
+background: linear-gradient(145deg, #151a2b, #0d1120);
+border: 1px solid rgba(255, 255, 255, 0.08);
+border-radius: 14px;
+overflow: hidden;
+transition: transform 0.3s ease, border-color 0.3s ease,
+box-shadow 0.3s ease;
+}
+
+.movie-card:hover {
+transform: translateY(-7px);
+border-color: rgba(255, 50, 100, 0.65);
+box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+.movie-card .poster {
+width: 100%;
+height: 280px;
+overflow: hidden;
+background: #171c2d;
+}
+
+.movie-card .poster img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+display: block;
+transition: transform 0.4s ease;
+}
+
+.movie-card:hover .poster img {
+transform: scale(1.05);
+}
+
+.movie-card h3 {
+color: #f5f5fa;
+font-size: 17px;
+margin: 15px 12px 8px;
+}
+
+.movie-card p {
+color: #a9afc2;
+font-size: 13px;
+margin: 0 12px 16px;
+line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+.movie-card .poster {
+height: 220px;
+}
+}
+
+.preference-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 18px 0 22px;
+    color: #c5cada;
+}
+
+.prompt-label {
+    display: block;
+    margin-bottom: 10px;
+    color: #f5f5fa;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.mood-prompt {
+    margin: 22px 0 12px;
+}
+
+.mood-buttons button.selected {
+    border-color: #ff3264;
+    background: #c82450;
+    box-shadow: 0 0 14px rgba(255, 50, 100, 0.22);
+}
+
+.recommend-button {
+    min-height: 46px;
+    padding-inline: 22px;
+    border-radius: 24px;
+    font-weight: 700;
+}
+
+#nameError,
+#moodError {
+    margin: 8px 0;
+    color: #ff8da5;
+}
+
+.preference-container select {
+    max-width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #424a62;
+    border-radius: 24px;
+    background: #171c2d;
+    color: #fff;
+    font: inherit;
+}
+
+#recommendationStatus,
+#catalogStatus,
+#searchStatus {
+    margin: 12px 0;
+    color: #c5cada;
+}
+
+#recommendationResults > h2 {
+    grid-column: 1 / -1;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .preference-container {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .preference-container select {
+        width: 100%;
+    }
+}
+/* ===== FOOTER ===== */
+.site-footer {
+margin-top: 80px;
+padding: 40px 20px 20px;
+text-align: center;
+background: #0d0f1a;
+border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-logo {
+color: #ffffff;
+font-size: 27px;
+letter-spacing: 2px;
+margin-bottom: 10px;
+}
+
+.footer-logo span {
+color: #ff4567;
+font-size: 34px;
+}
+
+.footer-logo .question {
+color: #ffffff;
+font-size: 27px;
+}
+
+.site-footer > p {
+color: #9ca3b8;
+font-size: 14px;
+}
+
+.footer-links {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 25px;
+margin: 25px 0;
+}
+
+.footer-links a {
+color: #c5cada;
+text-decoration: none;
+font-size: 14px;
+transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+color: #ff4567;
+}
+
+.footer-line {
+max-width: 900px;
+height: 1px;
+background: rgba(255, 255, 255, 0.08);
+margin: 25px auto 18px;
+}
+
+.site-footer .copyright {
+font-size: 12px;
+color: #737b91;
+}
+
+@media (max-width: 600px) {
+.footer-links {
+gap: 16px;
+}
+}
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 90px;
+}
+/* ===== POSTER IMAGE FIX ===== */
+
+.movie-card .poster {
+width: 100%;
+height: 280px;
+overflow: hidden;
+border-radius: 12px 12px 0 0;
+background: #171c2d;
+}
+
+.movie-card .poster img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+display: block;
+transition: transform 0.4s ease;
+}
+
+.movie-card:hover .poster img {
+transform: scale(1.05);
+}
+
+.movie-card {
+overflow: hidden;
+border-radius: 12px;
+}
+
+.movie-card h3 {
+margin: 15px 12px 8px;
+color: #ffffff;
+}
+
+.movie-card p {
+margin: 0 12px 16px;
+color: #b0b5c7;
+}
+
+.movie-card .movie-metadata {
+margin-top: -10px;
+font-size: 0.85rem;
+color: #8f96ad;
+}
+
+@media (max-width: 600px) {
+.movie-card .poster {
+height: 220px;
+}
+}
